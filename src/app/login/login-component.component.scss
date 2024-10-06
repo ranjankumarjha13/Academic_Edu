@@ -1,0 +1,57 @@
+:host {
+   
+    display: block;
+    
+    // background-image: url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-image: url("/assets/img/FRONT 5.png");
+   
+    // C:\Users\user\travelingApp\src\assets\img\elite.png
+    
+}
+.progressBar{
+    position: absolute;
+}
+.loignModel{
+    height: 335px;
+    position: absolute;
+    top: 136px;
+    left: 884px;
+    width: 400px;
+    padding: 30px;
+    box-shadow: 1px 0px 0px 2px grey;
+    background-color: transparent;
+    // border-top-right-radius: 30px;
+    // border-bottom-left-radius: 30px;
+    // border-bottom-right-radius: 30px;
+    border-radius: 15px;
+
+    // background-color: whitesmoke;
+
+    // border-radius: 10%;
+    
+}
+.lText{
+    color: blue;
+    text-align: center;
+    font-size: 16px;
+}
+.errorMsg{
+    color: red;
+    text-align: center;
+}
+input{
+    border: none
+}
+.objImg{
+   height: 70px;;
+   width: 70px;
+    position: absolute;
+    top: -30px;
+    left: 158px;
+    border: 2px solid;
+    border-radius: 50%
+}
+button{
+    width: 100%;
+}
+

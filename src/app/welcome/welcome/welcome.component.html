@@ -1,0 +1,71 @@
+<div class="row header" (click)="onClickheader()">
+  <!-- <div  class="headerTitle">
+    <p>Elite Academy Dashboard Section</p>
+  </div> -->
+  <div class="col-sm-2">
+    <img src="/assets/img/elite.jpg" height="78px" width="115px" title="Elite Academy">
+    <!-- <button (click)="onCickPrint()">Print</button> -->
+
+  </div>
+  <div class="col-sm-2">
+    <div *ngIf="currentAdmin && currentDate" style="margin-top: 25px">
+      <b>Admin Name:</b> {{currentAdmin}}<br>
+      <b>Logged-Time:</b> {{currentDate}}
+    </div>
+  </div>
+  <div class="col-sm-4 headerTitle">
+    <p><u>Elite Academy Dashboard Section</u></p>
+  </div>
+  <div class="col-sm-4">
+    <div class="col-sm-6" style="margin-top: 20px">
+      <input class="form-control" placeholder="Search.........." height="50px" title="Search with name Or id">
+    </div>
+
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3" style="margin-top: 25px;cursor: pointer;color: blue">
+       <i class="fa fa-power-off" (click)="logout()" style="font-size:20px;color:blue;margin-top: 10px;margin-left: 40px;" title="Logout"></i>
+      <!-- <a class="fa fa-power-off" (click)="logout()" style="font-size:48px;color:red"><u></u></a> -->
+      <div class="logoutModel" id="logId">
+        <div class="innerCard">
+          <div class="col-sm-12" style="margin-top: 10px">
+            <div class="col-sm-4"><b>Admin:</b></div>
+            <div class="col-sm-7">{{currentAdmin}}</div>
+          </div>
+          <div class="col-sm-12" style="margin-top: 20px">
+            <div class="col-sm-4"><b>Logout:</b></div>
+            <div class="col-sm-8">{{logOutTime}}</div>
+          </div>
+          <div class="col-sm-12" style="margin-left: 16px;margin-top: 20px">
+            <button (click)="onClcikSignOut()" class="btn btn-primary">Sign-Out</button>
+          </div>
+        </div>
+        <!-- <div class="col-sm-6">Role:</div>
+        <div class="col-sm-6">{{currentAdmin}}</div>
+        <button (click)="onClcikSignOut()">Sign-Out</button> -->
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="col-sm-1 sideNav">
+
+  <div class="fas fa-graduation-cap icons" (click)="onClicDashBoard()" title="Dashboard"></div>
+  <div class="fa fa-registered icons" title="Registration" (click)="onClickome()"></div>
+  <div class="fa fa-list icons" (click)="onClicStudentList()" title="Student List"></div>
+
+  <div class="fa fa-money icons" (click)="onClickPayment()" title="Payment Section"></div>
+  <div class="fa fa-envelope icons" title="Message section"></div>
+
+</div>
+
+
+
+
+<div class="footer">
+    <p>@Copyrigt Reserved 2020 Elite Academy</p>
+    <p>All Right Reserved</p>
+  </div>
+<div class="col-sm-11 chartArea" (click)="onClickRouterArea()">
+
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,46 @@
+<div class="row header">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-6 title">Elite Academy Student Managemant System</div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-5"></div>
+  <div class="col-sm-2 title">Hajipur (Patna)</div>
+  <div class="col-sm-3" id="logout" style="color: white;margin-left: 220px;cursor: pointer;" (click)="logout()">
+    <a><u>Logout</u></a></div>
+  <!-- <div class="col-sm-3" id="logout" style="color: white;margin-left: 180px;cursor: pointer;" (click)="Welcome()">
+    <div ><a><u>Back</u></a></div>
+  </div> -->
+
+</div>
+<div class="homescreen" id="homescreen">
+  <div class="text">
+    <marquee>Welcome to Elite Academy Student Managemant System</marquee>
+    <p>Please click left side Menu icon to get List of option</p>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 0px;">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a (click)="clickHomeMenu('registration')"> Registration</a>
+    <a (click)="clickHomeMenu('result')"> Result</a>
+    <a (click)="clickHomeMenu('contact')">Contact</a>
+  </div>
+
+  <div class="openIcon">
+    <span style="font-size:30px;cursor:pointer;margin-left: 40px;color: white" (click)="openNav()">&#9776;</span>
+
+  </div>
+
+</div>
+<div class="footer">
+  <p>@Copyrigt Reserved 2020 Elite Academy</p>
+  <p>All Right Reserved</p>
+</div>
+
+<div class="displayArea">
+
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- <router-outlet></router-outlet> -->

@@ -1,0 +1,45 @@
+<!-- s<app-progress *ngIf="isResponse"></app-progress> -->
+ <form [formGroup]="formroup">
+<div class="row" style="height: 650px;width: 700px" >
+
+  <div class="loignModel" style="margin-top: 80px">
+      <!-- <div class="progressBarr"><app-progress></app-progress></div> -->
+    <div style="margin-top: 20px;">
+      <div style="margin-top: 0px;">
+        <div class="row" class="lText"> 
+         
+          <u> <b>Elite Academy Login Dashboard</b></u>
+       </div>
+        <div class="row" class="errorMsg" *ngIf="errorMsg">
+           {{errorMsg}}
+        </div>
+        <div class="row">
+          <label>Username:</label>
+        </div>
+        <div class="row">
+          <input class="form-control" placeholder="Enter username" formControlName="username">
+        </div>
+      </div>
+      <div style="margin-top: 20px;">
+        <div class="row">
+          <label>Password:</label>
+        </div>
+        <div class="row">
+
+          <input class="form-control" type="password" placeholder="Enter password" formControlName="password">
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+
+      <button class="btn btn-primary" (click)="validateUser()">Login</button>
+
+
+    </div>
+
+
+  </div>
+</div>
+</form>
