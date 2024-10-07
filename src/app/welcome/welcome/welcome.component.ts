@@ -144,8 +144,7 @@ export class CLWelcomeComponent implements OnInit {
     //document.getElementById('logId').style.display='none'
   }
   onClickome() {
-    alert("1")
-   // document.getElementById('logId').style.display='none'
+   //document.getElementById('logId')?.style.display="none";
     this.router.navigateByUrl('/welcome/registration')
   }
   onClicStudentList(){
@@ -163,11 +162,13 @@ export class CLWelcomeComponent implements OnInit {
     var today = new Date();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     this.logOutTime=time
-    //document.getElementById('logId').style.display='inline-block'
+      this.router.navigateByUrl('/login')
+    // document.getElementById('logId').style.display='inline-block'
     
     // this.router.navigateByUrl('/login')
   }
   onClcikSignOut(){ 
+    
     
      this.router.navigateByUrl('/login')
   }
