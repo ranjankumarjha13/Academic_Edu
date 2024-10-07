@@ -18,7 +18,7 @@ export class CLLoginComponentComponent implements OnInit {
   constructor(private clLoginService: CLLoginserviceService, private formbuider: FormBuilder, private router: Router) { }
   isResponse=false
   ngOnInit() {
-    this.createFormGroup()
+   // this.createFormGroup()
   }
   createFormGroup() {
     // this.formroup = this.formbuider.group({
@@ -29,14 +29,16 @@ export class CLLoginComponentComponent implements OnInit {
 
   // Rest Api call for vaidationr
   validateUser(): any {
-    //this.router.navigateByUrl('/welcome' ,{ state: { username: this.formroup?.value.username } })
+    console.log("========================")
+    console.log(this.formroup.value.username)
+    this.router.navigateByUrl('/welcome' ,{ state: { username: this.formroup?.value.username } })
     this.isResponse=true;
     var sUserName = this.formroup.value.username;
     var sPassword = this.formroup?.value.password
     this.clLoginService.validateUser().subscribe(res => {
       console.log(res)
      // alert("Server Response"+"  "+res)
-      if (res && sUserName=='Chandankumar' ) {
+      if (sUserName=='Chandankumar' ) {
         this.isResponse=false;
         this.router.navigateByUrl('/welcome' ,{ state: { username: this.formroup.value.username } })
         this.errorMsg = undefined

@@ -144,6 +144,7 @@ export class CLWelcomeComponent implements OnInit {
     //document.getElementById('logId').style.display='none'
   }
   onClickome() {
+    alert("1")
    // document.getElementById('logId').style.display='none'
     this.router.navigateByUrl('/welcome/registration')
   }
