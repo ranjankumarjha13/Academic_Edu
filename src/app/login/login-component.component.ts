@@ -16,9 +16,9 @@ export class CLLoginComponentComponent implements OnInit {
   });
   errorMsg?: string
   constructor(private clLoginService: CLLoginserviceService, private formbuider: FormBuilder, private router: Router) { }
-  isResponse=false
+  isResponse = false
   ngOnInit() {
-   // this.createFormGroup()
+    // this.createFormGroup()
   }
   createFormGroup() {
     // this.formroup = this.formbuider.group({
@@ -29,26 +29,24 @@ export class CLLoginComponentComponent implements OnInit {
 
   // Rest Api call for vaidationr
   validateUser(): any {
-    console.log("========================")
     console.log(this.formroup.value.username)
-    this.router.navigateByUrl('/welcome' ,{ state: { username: this.formroup?.value.username } })
-    this.isResponse=true;
+    this.router.navigateByUrl('/welcome', { state: { username: this.formroup?.value.username } })
+    this.isResponse = true;
     var sUserName = this.formroup.value.username;
     var sPassword = this.formroup?.value.password
     this.clLoginService.validateUser().subscribe(res => {
       console.log(res)
-     // alert("Server Response"+"  "+res)
-      if (sUserName=='Admin' ) {
-        this.isResponse=false;
-        this.router.navigateByUrl('/welcome' ,{ state: { username: this.formroup.value.username } })
+      if (sUserName == 'Admin') {
+        this.isResponse = false;
+        this.router.navigateByUrl('/welcome', { state: { username: this.formroup.value.username } })
         this.errorMsg = undefined
       }
-      else if(res &&sUserName=='Ranjan' &&sPassword=='ranjan'){
-        this.router.navigateByUrl('/studentsection',{ state: { username: this.formroup.value.username } })
+      else if (res && sUserName == 'Ranjan' && sPassword == 'ranjan') {
+        this.router.navigateByUrl('/studentsection', { state: { username: this.formroup.value.username } })
         this.errorMsg = undefined
       }
-      else{
-         this.errorMsg = "Invalid User Please enter valid credentials"
+      else {
+        this.errorMsg = "Invalid User Please enter valid credentials"
       }
     })
     // if (this.formroup.controls.username.value == 'chandankumar' && this.formroup.controls.password.value == 'eliteacademy') {

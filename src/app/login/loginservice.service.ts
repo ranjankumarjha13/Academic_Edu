@@ -9,8 +9,8 @@ export class CLLoginserviceService {
   constructor(private http: HttpClient) { }
   validateUser() {
 
-    return this.http.get(this.userUrl+'?username=Ranjan&password=NGO');
-   
+    return this.http.get(this.userUrl + '?username=Ranjan&password=NGO');
+
   }
 
 }
