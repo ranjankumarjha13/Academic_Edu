@@ -13,7 +13,7 @@ export class CLWelcomeComponent implements OnInit {
   dataPolarChart: any;
   currentAdmin?: string
   currentDate?: string
-  logOutTime?:string
+  logOutTime?: string
   constructor(private router: Router) {
 
 
@@ -26,7 +26,7 @@ export class CLWelcomeComponent implements OnInit {
       this.currentAdmin = window.history.state['username']
       var today = new Date();
       var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-      this.currentDate=time
+      this.currentDate = time
     }
     this.loadPieChartData()
     this.loadLineData();
@@ -93,7 +93,7 @@ export class CLWelcomeComponent implements OnInit {
     }
 
   }
-  onCickPrint(){
+  onCickPrint() {
     window.print()
   }
   loadLineData() {
@@ -140,39 +140,39 @@ export class CLWelcomeComponent implements OnInit {
 
 
   }
-  onClickRouterArea(){
+  onClickRouterArea() {
     //document.getElementById('logId').style.display='none'
   }
   onClickome() {
-   //document.getElementById('logId')?.style.display="none";
+    //document.getElementById('logId')?.style.display="none";
     this.router.navigateByUrl('/welcome/registration')
   }
-  onClicStudentList(){
+  onClicStudentList() {
     //document.getElementById('logId').style.display='none'
     this.router.navigateByUrl('/welcome/studentList')
   }
-  onClicDashBoard(){
+  onClicDashBoard() {
     //document.getElementById('logId').style.display='none'
     this.router.navigateByUrl('/welcome/dashboard')
   }
-  onClickPayment(){
+  onClickPayment() {
     this.router.navigateByUrl('/welcome/payment')
   }
   logout() {
     var today = new Date();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    this.logOutTime=time
-      this.router.navigateByUrl('/login')
+    this.logOutTime = time
+    this.router.navigateByUrl('/login')
     // document.getElementById('logId').style.display='inline-block'
-    
+
     // this.router.navigateByUrl('/login')
   }
-  onClcikSignOut(){ 
-    
-    
-     this.router.navigateByUrl('/login')
+  onClcikSignOut() {
+
+
+    this.router.navigateByUrl('/login')
   }
-  onClickheader(){
+  onClickheader() {
     // document.getElementById('logId').style.display='none'
   }
 }

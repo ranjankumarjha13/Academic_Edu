@@ -1,63 +1,64 @@
-
-<div class="proressArea" ><app-progress *ngIf="isResponse" message="Loading"></app-progress></div>
+<div class="proressArea"><app-progress *ngIf="isResponse" message="Loading"></app-progress></div>
 <div class="studentList"><u>Student List</u></div>
 <div *ngIf="objStudent">
-<div class="containerr" style="margin-top: 20px;overflow-y: scroll" *ngIf="objStudent.length">            
-  <table class="table table-bordered">
-    <thead>
-      <tr>
+  <div class="studentListTable" *ngIf="objStudent.length">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
           <th>StudentId</th>
           <th>Reg-Id</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-        <th>FatherName</th>
-        <th>MotherName</th>
-        <th>MobileNumber</th>
-        <th>DatOfBirth</th>
-        <th>CurrentClass</th>
-        <th>Date</th>
-        <th>CAddress</th>
-        <th>PAddress</th>
-        <th>Gender</th>
-        <th>Course</th>
-        <th>CouseFee</th>
-        <th>PayMode</th>
-        <th>Pay</th>
-        <th>DueFee</th>
-        <th>Month</th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let obj of objStudent">
-      <tr>
-            <td>{{obj.studentId}}</td>
-            <td>{{obj.regId}}</td>
-        <td>{{obj.firstName}}</td>
-        <td>{{obj.lastName}}</td>
-        <td>{{obj.emailId}}</td>
-        <td>{{obj.fatherName}}</td>
-        <td>{{obj.motherName}}</td>
-        <td>{{obj.mobileNumber}}</td>
-        <td>{{obj.dateOfBirth}}</td>
-        <td>{{obj.currentClass}}</td>
-        <td>{{obj.date}}</td>
-        <td>{{obj.cAddress}}</td>
-        <td>{{obj.pAddress}}</td>
-        <td>{{obj.gender}}</td>
-        <td>{{obj.course}}</td>
-        <td>{{obj.courseFee}}</td>
-        <td>{{obj.payMode}}</td>
-        <td>{{obj.pay}}</td>
-        <td>{{obj.dueFee}}</td>
-        <td>{{obj.month}}</td>
-      </tr>
-     
-    </tbody>
-  </table>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>FatherName</th>
+          <th>MotherName</th>
+          <th>MobileNumber</th>
+          <th>DatOfBirth</th>
+          <th>CurrentClass</th>
+          <th>Date</th>
+          <th>CAddress</th>
+          <th>PAddress</th>
+          <th>Gender</th>
+          <th>Course</th>
+          <th>CouseFee</th>
+          <th>PayMode</th>
+          <th>Pay</th>
+          <th>DueFee</th>
+          <th>Month</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let obj of objStudent">
+        <tr>
+          <td>{{obj.studentId}}</td>
+          <td>{{obj.regId}}</td>
+          <td>{{obj.firstName}}</td>
+          <td>{{obj.lastName}}</td>
+          <td>{{obj.emailId}}</td>
+          <td>{{obj.fatherName}}</td>
+          <td>{{obj.motherName}}</td>
+          <td>{{obj.mobileNumber}}</td>
+          <td>{{obj.dateOfBirth}}</td>
+          <td>{{obj.currentClass}}</td>
+          <td>{{obj.date}}</td>
+          <td>{{obj.cAddress}}</td>
+          <td>{{obj.pAddress}}</td>
+          <td>{{obj.gender}}</td>
+          <td>{{obj.course}}</td>
+          <td>{{obj.courseFee}}</td>
+          <td>{{obj.payMode}}</td>
+          <td>{{obj.pay}}</td>
+          <td>{{obj.dueFee}}</td>
+          <td>{{obj.month}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
 </div>
+<div>
+
+
 </div>
-<div >
-<div *ngIf="objStudent.length==0" style="text-align: center;color: red">
-   Data Doesn't Exist
-</div>
+<div *ngIf="!objStudent" style="text-align: center;color: red">
+  <h2>Data Doesn't Exist</h2>
 </div>

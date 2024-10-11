@@ -1,8 +1,8 @@
 <form [formGroup]="formroup">
-<div class="proressArea">
+  <div class="proressArea">
     <!-- <app-progress  message="Saving"></app-progress> -->
   </div>
-  
+
   <!-- <button (click)="onCickPrint()">Print</button> -->
   <!-- <div class="registrtionNumberShow">
     <div *ngIf="objData.firstName">
@@ -18,13 +18,13 @@
           <u> {{errorMessage}}</u>
         </div>
       </div> -->
-  
-      <!-- <div>
+
+  <!-- <div>
          
       </div> -->
-    <!-- </div> -->
-  
-   <div class="mainRegistrationFormDiv">
+  <!-- </div> -->
+
+  <div class="mainRegistrationFormDiv">
     <div class="col-sm-12 m-t-15">
       <div class="col-sm-4">
         <div class="m-l-15">
@@ -75,7 +75,7 @@
           *ngIf="formgroup.controls.fatherName.invalid && (formgroup.controls.fatherName.dirty || formgroup.controls.fatherName.touched)">
           Father-Name is required
         </div> -->
-  
+
       </div>
       <div class="col-sm-4">
         <div class="m-l-15">
@@ -139,11 +139,11 @@
           CurrentClass is required
         </div> -->
       </div>
-  
-  
+
+
     </div>
-  
-  
+
+
     <div class="col-sm-12 m-t-15">
       <div class="col-sm-4">
         <div class="m-l-15">
@@ -164,32 +164,34 @@
             <option value="11">SANKALP Biology</option>
             <option value="12">SANKALP PCM(Advance)</option>
             <option value="13">SANKALP PCB(Advance)</option>
-  
+
             <!-- <option value="audi"></option> -->
-          </select> </div>
+          </select>
+        </div>
         <!-- <div class="errorMs"
           *ngIf="formgroup.controls.course.invalid && (formgroup.controls.course.dirty || formgroup.controls.course.touched)">
           Course is required
         </div> -->
       </div>
-  
+
       <div class="col-sm-4">
         <div class="m-l-15">
           <label>Course Fee:</label><span class="mindetoryFied">*</span>
         </div>
         <div class="col-sm-12">
           <select id="cars" class="form-control" formControlName="courseFee">
-  
+
             <option value="1">8000 INR</option>
             <option value="2">10000 INR</option>
             <option value="3">11000 INR</option>
             <option value="4">12000 INR</option>
             <option value="5">15000 INR</option>
             <option value="6">18000 INR</option>
-  
+
             <option value="7">25000 INR</option>
-  
-          </select> </div>
+
+          </select>
+        </div>
         <!-- <div class="errorMs"
           *ngIf="formgroup.controls.courseFee.invalid && (formgroup.controls.courseFee.dirty || formgroup.controls.courseFee.touched)">
           Course Fee is required
@@ -205,14 +207,15 @@
             <option value="2">Credit Card</option>
             <option value="3">Debit Card</option>
             <option value="4">Internet Banking</option>
-          </select> </div>
+          </select>
+        </div>
         <!-- <div class="errorMs"
           *ngIf="formgroup.controls.payMode.invalid && (formgroup.controls.payMode.dirty || formgroup.controls.payMode.touched)">
           Payment Mode is required
         </div> -->
       </div>
     </div>
-  
+
     <div class="col-sm-12 m-t-15">
       <div class="col-sm-4">
         <div class="m-l-15">
@@ -225,9 +228,9 @@
           *ngIf="formgroup.controls.pay.invalid && (formgroup.controls.pay.dirty || formgroup.controls.pay.touched)">
           Paying is required
         </div> -->
-  
+
       </div>
-  
+
       <div class="col-sm-4">
         <div class="m-l-15">
           <label>Due Fee:</label><span class="mindetoryFied">*</span>
@@ -235,11 +238,11 @@
         <div class="col-sm-12">
           <input class="form-control" formControlName="dueFee">
         </div>
-          <!-- <div class="errorMs"
+        <!-- <div class="errorMs"
             *ngIf="formgroup.controls.dueFee.invalid && (formgroup.controls.dueFee.dirty || formgroup.controls.dueFee.touched)">
             Due Fee is required
           </div> -->
-  
+
       </div>
       <div class="col-sm-4">
         <div class="m-l-15">
@@ -265,10 +268,10 @@
           *ngIf="formgroup.controls.month.invalid && (formgroup.controls.month.dirty || formgroup.controls.month.touched)">
           Month is required
         </div> -->
-  
+
       </div>
     </div>
-  
+
     <div class="col-sm-12 m-t-15">
       <div class="col-sm-4">
         <div class="m-l-15">
@@ -303,7 +306,7 @@
             <option value="1">Male</option>
             <option value="2">Female</option>
             <option value="3">Others</option>
-  
+
           </select>
         </div>
         <!-- <div class="errorMs"
@@ -312,10 +315,10 @@
         </div> -->
       </div>
     </div>
-   </div>
-  
-    <div class="col-sm-12 xyz" style="margin-top: 10px">
-      <!-- <div class="col-sm-5">
+  </div>
+
+  <div class="col-sm-12 xyz" style="margin-top: 10px">
+    <!-- <div class="col-sm-5">
           <div class="col-sm-4">
               <div class="col-sm-12 imgArea">
                   <img [src]="localUrl" *ngIf="localUrl" class="imgPlaceholder" height="100%" width="110%">
@@ -327,23 +330,22 @@
                
             </div>
       </div> -->
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-3 buttonArea">
       <div class="col-sm-4">
-  
+        <button class="btn btn-primary">Register</button>
+
       </div>
-      <div class="col-sm-3">
-        <div class="col-sm-4">
-          <button class="btn btn-primary">Register</button>
-  
-        </div>
-        <div class="col-sm-4">
-          <button class="btn btn-primary">Cancel</button>
-        </div>
-        <div class="col-sm-4">
-          <button class="btn btn-primary" id="printBtn" disabled="false"
-            style="width: 130%">Print</button>
-        </div>
+      <div class="col-sm-4">
+        <button class="btn btn-primary">Cancel</button>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-primary" id="printBtn" disabled="false" style="width: 130%">Print</button>
       </div>
     </div>
+  </div>
   <!-- </div> -->
   <div class="confirmMessage" id="confirmDialog">
     <!-- <app-confirmmessage></app-confirmmessage> -->
@@ -353,7 +355,7 @@
       <div class="col-sm-12" style="border-bottom: 1px solid #8888">
         <div class="col-sm-1">
           <img src="/assets/img/elite.jpg" height="78px" width="115px" title="Elite Academy">
-  
+
         </div>
         <div class="col-sm-8" style="text-align: center;font-size: 30px;color:red"><b><u>Elite Academy Patna</u></b>
         </div>
@@ -439,10 +441,10 @@
           <!-- <div class="col-sm-6" *ngIf="objData.gender==1">Male</div> -->
           <!-- <div class="col-sm-6" *ngIf="objData.gender==2">Female</div> -->
           <!-- <div class="col-sm-6" *ngIf="objData.gender==3">Others</div> -->
-  
+
         </div>
       </div>
-  
+
       <div class="col-sm-12 m-t-40">
         <div class="col-sm-4">
           <div class="col-sm-6"><label>Paying</label></div>
@@ -458,20 +460,20 @@
           <!-- <div class="col-sm-6" *ngIf="objData.gender==2">February</div> -->
           <!-- <div class="col-sm-6" *ngIf="objData.gender==3">March</div> -->
           <!-- <div class="col-sm-6" *ngIf="objData.gender==4">April</div> -->
-  
+
         </div>
       </div>
       <div class="col-sm-12">
         <div class="col-sm-4">
-  
+
         </div>
         <div class="col-sm-4">
-  
+
         </div>
         <div class="col-sm-4">
           <button>Back</button>
         </div>
-  
+
       </div>
     </div>
   </div>

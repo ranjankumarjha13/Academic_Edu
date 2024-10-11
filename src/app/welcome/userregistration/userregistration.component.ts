@@ -11,13 +11,13 @@ import { CLHomeserviceService } from 'src/app/home/homeservice.service';
   providers: [CLHomeserviceService]
 })
 export class CLUserregistrationComponent implements OnInit {
-  isPrint=false;
+  isPrint = false;
   formroup = new FormGroup({
     username: new FormControl<string>('Chandankumar'),
     password: new FormControl<string>('eliteacademy'),
   });
   ngOnInit(): void {
-   
+
   }
-  
+
 }

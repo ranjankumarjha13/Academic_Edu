@@ -10,10 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-
 import { CLWelcomeComponent } from './welcome/welcome/welcome.component';
-//cls
-//import { ChartModule } from 'primeng/chart';
 import { CLProgressComponent } from './mycomponent/progress/progress.component';
 import { CLConfirmmessageComponent } from './mycomponent/confirmmessage/confirmmessage.component';
 import { CLDashboardComponent } from './welcome/dashboard/dashboard.component';
@@ -74,7 +71,6 @@ const appRoutes: Routes = [
     CLCoremoduleModule,
     ReactiveFormsModule,
     HttpClientModule,
-   // ChartModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

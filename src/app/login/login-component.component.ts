@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 })
 export class CLLoginComponentComponent implements OnInit {
   formroup = new FormGroup({
-    username: new FormControl<string>('Chandankumar'),
-    password: new FormControl<string>('eliteacademy'),
+    username: new FormControl<string>('Admin'),
+    password: new FormControl<string>('admin'),
   });
   errorMsg?: string
   constructor(private clLoginService: CLLoginserviceService, private formbuider: FormBuilder, private router: Router) { }
@@ -38,7 +38,7 @@ export class CLLoginComponentComponent implements OnInit {
     this.clLoginService.validateUser().subscribe(res => {
       console.log(res)
      // alert("Server Response"+"  "+res)
-      if (sUserName=='Chandankumar' ) {
+      if (sUserName=='Admin' ) {
         this.isResponse=false;
         this.router.navigateByUrl('/welcome' ,{ state: { username: this.formroup.value.username } })
         this.errorMsg = undefined

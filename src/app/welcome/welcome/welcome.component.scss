@@ -1,50 +1,56 @@
-.header{
-    height: 80px;;
-    background-color:#efeaea;
+.header {
+    height: 80px;
+    ;
+    background-color: #efeaea;
     width: 100%
 }
-.sideNav{
+
+.sideNav {
     border: 1px solid #8888;
     height: 560px;
-    background-color:#efeaea;
+    background-color: #efeaea;
     position: fixed;
 }
 
-.chartArea{
+.chartArea {
     height: 530px;
     overflow-y: scroll
 }
+
 .footer {
     position: fixed;
     left: 30;
     bottom: 0;
     width: 100%;
-    //background-color:#8888;
     color: white;
     text-align: center;
-    height: 60px;;
-      background-color:#001f3f;
-      z-index: 8s000;
- }
-.icons{
+    height: 60px;
+    ;
+    background-color: #001f3f;
+    z-index: 8s000;
+}
+
+.icons {
     font-size: 55px;
     cursor: pointer;
     margin: 12px;
     margin-top: 30px;
     //border-bottom: 1px solid black;
     color: brown
-    
 }
-.innerCard{
+
+.innerCard {
     margin: 10px;
     border: 1px solid #8888;
     height: 135px;
     border-radius: 7px;
 }
-button{
+
+button {
     width: 96%
 }
-.logoutModel{
+
+.logoutModel {
     border: 1px solid #888888;
     position: absolute;
     display: none;
@@ -57,15 +63,18 @@ button{
     z-index: 8000;
     box-shadow: 0px 0px 5px 0px #8888
 }
-.chart{
+
+.chart {
     border: 1px soid red
 }
-.imgDiv{
+
+.imgDiv {
     margin-left: 50px;
 }
-.headerTitle{
-text-align: center;
-font-size: 26px;
-color: #ca5d5a;
-margin-top: 15px
+
+.headerTitle {
+    text-align: center;
+    font-size: 26px;
+    color: #ca5d5a;
+    margin-top: 15px
 }

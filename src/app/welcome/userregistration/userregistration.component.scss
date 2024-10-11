@@ -1,61 +1,78 @@
-.m-l-15{
+.m-l-15 {
     margin-left: 15px;
-};
-.headerSection{
+}
+
+;
+
+.headerSection {
     // height: 60px;
     width: 97%;
     margin-left: 40px;
     font-size: 16px;
-    
+
 }
-.mainRegistrationFormDiv{
-    margin-left: 80px;;
+
+.mainRegistrationFormDiv {
+    margin-left: 80px;
+    ;
     height: 370px;
     overflow-y: scroll;
     width: 100%;
+    position: absolute;
 }
-.mindetoryFied{
-  font-size: 20px;
-  color: red;
- 
+
+.mindetoryFied {
+    font-size: 20px;
+    color: red;
+
 }
-.errorMessage{
+
+.buttonArea {
+    top: 490px;
+    ;
+    left: 900px;
+    position: fixed;
+}
+
+.errorMessage {
     text-align: center;
     color: red;
     font-size: 14px;
 }
-.proressArea{
+
+.proressArea {
     position: absolute;
     left: 508px;
     top: 199px;
 }
 
-.errorMs{
+.errorMs {
     color: red;
     margin-left: 15px;
     margin-top: 15px;
 }
+
 // .m-t-15{
 // margin-top: 10px
 // }
 
-.m-t-40{
+.m-t-40 {
     margin-top: 30px
 }
-.mainDiv{
+
+.mainDiv {
     height: 500px;
     overflow-y: scroll;
     overflow-x: hidden
-    
-    
-    
 }
-.imgArea{
+
+.imgArea {
     height: 100px;
     width: 100px;
     border: 1px solid #8888
 }
-.registrtionNumberShow{
+
+.registrtionNumberShow {
     height: 200px;
     width: 200px;
     border: 1px solid;
@@ -63,26 +80,30 @@
     top: -50px;
     z-index: 70000
 }
+
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:#8888;
+    background-color: #8888;
     color: white;
     text-align: center;
- }
- .xyz .col-sm-6{
-  width: 38%;
- }
- .confirmMessage{
-     position: absolute;
-     top: 530px;
-     left: 1000px;
-     z-index: 5000
- }
- .printForm{
-     border: 1px solid;
-     margin: 10px;
-     height: 500px;
- }
+}
+
+.xyz .col-sm-6 {
+    width: 38%;
+}
+
+.confirmMessage {
+    position: absolute;
+    top: 530px;
+    left: 1000px;
+    z-index: 5000
+}
+
+.printForm {
+    border: 1px solid;
+    margin: 10px;
+    height: 500px;
+}
