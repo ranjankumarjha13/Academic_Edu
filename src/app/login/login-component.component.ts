@@ -29,6 +29,7 @@ export class CLLoginComponentComponent implements OnInit {
 
   // Rest Api call for vaidationr
   validateUser(): any {
+    console.log("Test")
     console.log(this.formroup.value.username)
     this.router.navigateByUrl('/welcome', { state: { username: this.formroup?.value.username } })
     this.isResponse = true;
@@ -49,15 +50,15 @@ export class CLLoginComponentComponent implements OnInit {
         this.errorMsg = "Invalid User Please enter valid credentials"
       }
     })
-    // if (this.formroup.controls.username.value == 'chandankumar' && this.formroup.controls.password.value == 'eliteacademy') {
-    //   // alert("Valid ")
-    //   this.router.navigateByUrl('/studentsection')
-    //   this.errorMsg = undefined
-    // }
-    // else {
-    //   // this.router.navigateByUrl('/studentsection')
-    //   this.errorMsg = "Invalid User Please enter valid credentials"
-    // }
+    if (this.formroup.controls.username.value == 'chandankumar' && this.formroup.controls.password.value == 'eliteacademy') {
+      // alert("Valid ")
+      this.router.navigateByUrl('/studentsection')
+      this.errorMsg = undefined
+    }
+    else {
+      // this.router.navigateByUrl('/studentsection')
+      this.errorMsg = "Invalid User Please enter valid credentials"
+    }
   }
 
 } 
