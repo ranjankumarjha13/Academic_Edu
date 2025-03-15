@@ -29,7 +29,6 @@ export class CLLoginComponentComponent implements OnInit {
 
   // Rest Api call for vaidationr
   validateUser(): any {
-    console.log("Test")
     console.log(this.formroup.value.username)
     this.router.navigateByUrl('/welcome', { state: { username: this.formroup?.value.username } })
     this.isResponse = true;
